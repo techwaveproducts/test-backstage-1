@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: meu-microservico-da-aumigos
+  description: Serviço de exemplo
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/aumigos
+  system: meu-sistema-aumigos

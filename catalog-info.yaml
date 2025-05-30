@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Location
+kind: Component
 metadata:
-  name: aumigos-components
+  name: meu-microservico-da-aumigos
   annotations:
-    backstage.io/user-org: aumigos
+    backstage.io/organization: aumigos
 spec:
-  targets:
-    - ./components/meu-microservico-da-aumigos.yaml
+  type: service
+  owner: group:default/aumigos

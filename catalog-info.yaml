@@ -1,10 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
-  name: meu-microservico-da-aumigos
-  description: Serviço de exemplo para a organização Aumigos
+  name: aumigos-components
+  annotations:
+    backstage.io/user-org: aumigos
 spec:
-  type: service
-  lifecycle: experimental
-  owner: group:default/aumigos # <-- Isso é o que conecta o projeto à organização
-  system: meu-sistema-aumigos
+  targets:
+    - ./components/meu-microservico-da-aumigos.yaml

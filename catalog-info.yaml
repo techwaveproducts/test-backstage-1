@@ -7,3 +7,4 @@ metadata:
 spec:
   type: service
   owner: group:default/aumigos
+  lifecycle: development

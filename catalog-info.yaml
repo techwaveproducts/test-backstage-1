@@ -1,18 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-application
-  namespace: default
-  description: My Backstage application
-  annotations:
-    backstage.io/organization: techwaveproducts # Matches your GitHub org
-    github.com/project-slug: techwaveproducts/test-backstage-1
-    backstage.io/techdocs-ref: dir:.
-    backstage.io/tags: web,node
-  labels:
-    organization: techwaveproducts  # Alternative way to specify org
+  name: meu-microservico-da-aumigos
+  description: Serviço de exemplo para a organização Aumigos
 spec:
   type: service
-  lifecycle: production
-  owner: team-a@my-company.com
-  system: my-system
+  lifecycle: experimental
+  owner: group:default/aumigos # <-- Isso é o que conecta o projeto à organização
+  system: meu-sistema-aumigos
